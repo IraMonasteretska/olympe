@@ -101,6 +101,13 @@ img {
     }
 }
 
+.subsecttitle {
+    text-align: center;
+    color: #3B3838;
+    font-size: 17px;
+    margin-bottom: 70px;
+}
+
 @media(max-width:1499.8px) {
     h1 {
         font-size: 46px;
@@ -153,6 +160,10 @@ img {
 
     h2, h3 {
         font-size: 28px;
+    }
+
+    .subsecttitle  {
+        font-size: 15px;
     }
     
 }

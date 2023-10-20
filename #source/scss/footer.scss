@@ -1,6 +1,8 @@
 footer.footer {
     background: #5E569B;
     padding: 60px 0;
+    position: relative;
+    z-index: 3;
 }
 
 .footer__nav {

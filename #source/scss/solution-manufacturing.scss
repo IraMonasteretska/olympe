@@ -54,3 +54,47 @@
         }
     }
 }
+
+.platformwelcomesect.manufacturing img {
+    max-width: 100%;
+}
+
+@media(max-width:991.8px) {
+
+    .aboutplatform.manufacturing .subsecttitle {
+        margin-bottom: 60px;
+    }
+
+    .aboutplatform.manufacturing .tyowct-title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .aboutplatformbox {
+        margin-bottom: 30px;
+    }
+
+    .trustedby.manufacturing .getstartedsect {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .platformwelcomesect.manufacturing .leftbock {
+        padding-top: 0;
+    }
+
+    .aboutplatform.manufacturing .tyowct-title {
+        font-size: 18px;
+    }
+
+
+
+
+    .aboutplatform,
+    .getstartedsect  {
+        .yellowbtn {
+            width: 100%;
+        }
+    }
+}

@@ -87,6 +87,10 @@ img {
     animation: pulse1 2s infinite;
 }
 
+.bodyhidden {
+    // overflow: hidden;
+}
+
 @keyframes pulse1 {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(254, 194, 16, .5);

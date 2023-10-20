@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    AOS.init();
+    AOS.init({disable: 'mobile'});
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 10) {

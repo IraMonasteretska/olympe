@@ -1,4 +1,5 @@
 .toptitlesect {
+    padding: 30px 0;
     min-height: 320px;
     border-radius: 0px 0px 60px 60px;
     background: linear-gradient(82deg, #5E569B -1.48%, #1CA99A 100%), #1CA99A;
@@ -15,6 +16,7 @@
     p {
         color: #fff;
         font-weight: 600;
+        margin: 0;
     }
 }
 
@@ -91,6 +93,16 @@
             }
         }
     }
+
+    blockquote {
+        border-left: 2px solid #5E569B;
+        font-style: italic;
+        padding: 10px 0 10px 20px;
+
+        p {
+            margin: 0;
+        }
+    }
 }
 
 .privacynav {
@@ -124,6 +136,7 @@
                 text-transform: capitalize;
                 line-height: 150%;
                 transition: 0.3s;
+                display: block;
 
                 &.active {
                     padding-left: 10px;
@@ -131,5 +144,170 @@
                 }
             }
         }
+    }
+}
+
+.tablewrapper {
+    overflow: auto;
+    margin-bottom: 20px;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #5E569B;
+        border-radius: 10px;
+    }
+}
+
+// terms
+.privpolcontent.terms {
+    h3 {
+        margin-top: 60px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media(max-width:1399.8px) {
+
+    .privacynav .title {
+        font-size: 25px;
+    }
+
+    .privacynav ul li a {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .toptitlesect {
+        min-height: 280px;
+    }
+
+    .toptitlesect h1 {
+        margin-bottom: 20px;
+    }
+
+    .privacynav {
+        padding-left: 0;
+    }
+
+    .privacynav .title {
+        font-size: 20px;
+    }
+
+    .privpolcontent table tbody td {
+        min-width: 30%;
+        padding: 10px;
+    }
+
+    .privpolcontent table thead th {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .privpolcontent table tbody td ul {
+        padding-left: 20px;
+    }
+
+    .privpolcontent table tbody td ul li,
+    .privpolcontent table tbody td {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .privpolcontent {
+        .col-lg-9 {
+            order: 2;
+        }
+
+        .col-lg-3 {
+            order: 1;
+        }
+    }
+
+    .privacynav {
+        padding-top: 0;
+        margin-bottom: 40px;
+
+        .title {
+            font-size: 28px;
+        }
+    }
+
+    .privacynav ul li a {
+        font-size: 18px;
+    }
+
+    .privpolcontent h3 {
+        margin-bottom: 20px;
+    }
+
+    .privpolcontent.terms h3 {
+        margin-top: 40px;
+    }
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .toptitlesect p {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .toptitlesect {
+        min-height: 220px;
+    }
+
+    .privpolcontent {
+        padding-top: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .privacynav .title {
+        font-size: 24px;
+    }
+
+    .privpolcontent h3 {
+        font-size: 22px;
+    }
+
+    .privacynav ul li a {
+        font-size: 16px;
     }
 }

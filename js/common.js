@@ -100,36 +100,37 @@ $(document).ready(function () {
 
 
     // Privacy nav
-    var headers = document.querySelectorAll('.privpolcontent h3');
-    for (var i = 0; i < headers.length; i++) {
-        headers[i].setAttribute('id', i + 1);
+
+    if ($('.privacynav').length > 0) {
+        var headers = document.querySelectorAll('.privpolcontent h3');
+        for (var i = 0; i < headers.length; i++) {
+            headers[i].setAttribute('id', i + 1);
+        }
+
+
+        var headers = document.querySelectorAll('.privpolcontent h3');
+        var list = document.querySelector('.privacynav');
+        var ul = document.createElement('ul');
+
+        for (var i = 0; i < headers.length; i++) {
+            var text = headers[i].textContent;
+            var id = headers[i].getAttribute('id');
+            var listItem = document.createElement('li');
+            var link = document.createElement('a');
+
+            link.textContent = text;
+            link.setAttribute('href', '#' + id);
+            listItem.appendChild(link);
+            ul.appendChild(listItem);
+        }
+
+        list.appendChild(ul);
     }
 
-
-    var headers = document.querySelectorAll('.privpolcontent h3');
-    var list = document.querySelector('.privacynav');
-    var ul = document.createElement('ul');
-
-    for (var i = 0; i < headers.length; i++) {
-        var text = headers[i].textContent;
-        var id = headers[i].getAttribute('id');
-        var listItem = document.createElement('li');
-        var link = document.createElement('a');
-
-        link.textContent = text;
-        link.setAttribute('href', '#' + id);
-        listItem.appendChild(link);
-        ul.appendChild(listItem);
-    }
-
-    list.appendChild(ul);
-
-
-    // -----------.
+    // -----------
 
 
     $(".privacynav ul").on("click", "a", function (event) {
-        console.log('sdsdsd')
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;

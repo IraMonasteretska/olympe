@@ -157,4 +157,13 @@ $(document).ready(function () {
         });
     });
 
+
+    if ($('select').length > 0) {
+        $(".js-example-basic-single").select2({
+            placeholder: "Select",
+            minimumResultsForSearch: -1
+        });
+    }
+    
+
 });

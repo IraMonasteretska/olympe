@@ -39,11 +39,16 @@
         color: #222;
         font-size: 18px;
         line-height: 150%;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         img {
             position: absolute;
             left: 0;
-            top: -5px;
+            top: -8px;
             width: 40px;
         }
 

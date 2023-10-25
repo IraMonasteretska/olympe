@@ -23,6 +23,7 @@
 
     .imgwrap {
         text-align: center;
+        margin-top: -20px;
     }
 }
 
@@ -144,4 +145,77 @@
         width: 100%;
         border: none;
     }
+}
+
+@media(max-width:1440.8px) {
+    .ebooksect:after {
+        height: 690px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .ebooksect:after {
+        background: url(../img/ebook/ebookbg.png) no-repeat top left / auto 100%;
+    }
+
+    .ebookleftsect h1 {
+        font-size: 38px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .ebooksect:after {
+        background: url(../img/ebook/ebookbg.png) no-repeat top left/auto 90%;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .ebooksect:after {
+        background: url(../img/ebook/ebookbg.png) no-repeat top left/auto 100%;
+    }
+
+    .ebooksect {
+        padding-top: 150px;
+
+        .mrow {
+            &>.col-lg-6 {
+                &:nth-child(1) {
+                    order: 2;
+                }
+
+                &:nth-child(2) {
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    .ebooksect .imgwrap {
+        margin-bottom: 30px;
+    }
+
+    .ebookform {
+        max-width: 100%;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .ebookleftsect h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .ebooksect:after {
+        background: url(../img/ebook/ebookbg.png) no-repeat top left/auto 100%;
+    }
+
+    .ebooksect {
+        padding-bottom: 80px;
+    }
+
+
 }

@@ -1,0 +1,134 @@
+.platformwelcomesect.resdev {
+    padding-top: 35px;
+
+    .imgwrap:after {
+        top: 35%;
+    }
+
+    .leftbock {
+        padding-top: 65px;
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            margin-bottom: 18px;
+            color: #222;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 130%;
+        }
+
+        .resdevwelbtns {
+            margin-top: 40px;
+
+            .yellowbtn {
+                margin-right: 20px;
+                border: 2px solid #FEC210;
+            }
+
+            .whitebtn {
+                padding: 19px 40px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 130%;
+                font-family: "Lexend Deca", sans-serif;
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 12px;
+                border: 2px solid #5E569B;
+                color: #5E569B;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #fff;
+                    background: #5E569B;
+                }
+            }
+        }
+
+        p.subtitle {
+            max-width: 100%;
+        }
+    }
+
+
+
+
+}
+
+.aboutplatform.resdev {
+    h2 {
+        margin-bottom: 70px;
+    }
+}
+
+.videosection {
+    padding: 115px 0 20px;
+
+    h2 {
+        margin-bottom: 70px;
+    }
+}
+
+.videobox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    .videobox__img {
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 39%;
+        flex: 0 0 39%;
+        box-shadow: 0px 4px 12px -2px rgba(34, 34, 34, 0.08);
+
+
+        a {
+            display: block;
+            width: 100%;
+            height: 153px;
+        }
+
+        .bgvid {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            position: absolute;
+        }
+
+        .bgplaybtn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 46px;
+        }
+    }
+
+    .videobox__descr {
+        width: 100%;
+        max-width: 61%;
+        flex: 0 0 61%;
+        padding-left: 25px;
+
+        p {
+            margin: 0;
+            color: #3B3838;
+            font-size: 15px;
+            max-width: 385px;
+        }
+
+        .title {
+            margin-bottom: 20px;
+            color: #222;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 150%;
+        }
+    }
+}

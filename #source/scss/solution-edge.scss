@@ -1,0 +1,75 @@
+.aboutplatform.manufacturing .yellowbtn {
+    min-width: 270px;
+}
+
+.soltextsect {
+    padding: 100px 0 20px;
+
+    .imgwrap {
+        img {
+            width: calc(100% - 30px);
+        }
+    }
+
+    .textwrap {
+        padding-left: 30px;
+
+        h3 {
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-size: 17px;
+            color: #3B3838;
+        }
+
+        ul {
+            margin-top: 25px;
+            color: #3B3838;
+            font-size: 17px;
+
+            li {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1399.8px) {
+    .soltextsect .textwrap {
+        padding-left: 0;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .soltextsect .imgwrap img {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .soltextsect .textwrap p {
+        font-size: 15px;
+    }
+
+    .soltextsect .textwrap h3 {
+        margin-bottom: 20px;
+    }
+
+    .soltextsect .textwrap ul {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+

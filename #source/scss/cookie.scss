@@ -1,0 +1,352 @@
+.modaloverlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(19, 19, 19, 0.55);
+    z-index: 99;
+    overflow: auto;
+}
+
+.cookiepopup {
+    // // padding: 40px 50px 40px 60px;
+    // background: #fff;
+    // max-width: 1314px;
+    // margin: 0 auto;
+    // border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    // position: absolute;
+    // bottom: 23px;
+    // width: 100%;
+    // right: 0;
+    // left: 0;
+
+
+    .cookiepopup__descr {
+        width: 100%;
+        max-width: calc(100% - 217px);
+        flex: 0 0 calc(100% - 217px);
+        padding-right: 70px;
+
+        p {
+            color: #222;
+            font-size: 15px;
+            line-height: 150%;
+
+            a {
+                color: #35BCAE;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+        .title {
+            margin-bottom: 13px;
+            color: #35BCAE;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 150%;
+        }
+    }
+
+    .cookiepopup__btns {
+        width: 100%;
+        max-width: 217px;
+        flex: 0 0 217px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+            color: #222;
+            font-weight: 500;
+            line-height: 130%;
+            text-decoration: none;
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 500;
+            min-height: 50px;
+            border-radius: 12px;
+            border: 1px solid #FEC210;
+            box-shadow: 0px 4px 12px -2px rgba(34, 34, 34, 0.08);
+            margin-bottom: 13px;
+            transition: 0.3s;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                background: #FEC210;
+            }
+
+            &.accept {
+                background: #FEC210;
+
+                &:hover {
+                    animation: pulse1 2s infinite;
+                }
+            }
+        }
+    }
+
+    .cookiepopup__icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+#cookie {
+    .modal-dialog {
+        position: fixed;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 1314px;
+    }
+
+    .modal-content {
+        padding: 40px 50px 40px 60px;
+        border-radius: 12px;
+    }
+}
+
+.settingcook {
+
+    .cookieset__icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 79px;
+        top: 0;
+        transform: translateY(-50%);
+    }
+
+    .modal-dialog {
+        max-width: 705px;
+    }
+
+    .settingswrapper {
+        padding: 70px 50px 50px;
+
+        p {
+            color: #222;
+            font-size: 14px;
+            line-height: 150%;
+            margin-bottom: 25px;
+        }
+
+        .title {
+            margin-bottom: 15px;
+            color: #35BCAE;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 150%;
+            text-align: center;
+        }
+
+        .switchsect {
+            .switchbox {
+                padding: 20px 0;
+                border-top: 1px solid rgba(53, 188, 174, 0.5);
+            }
+
+            .switchbox__head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .headtitle {
+                    margin: 0;
+                    color: #222;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 150%;
+                }
+            }
+
+
+
+
+
+
+
+        }
+
+        .yellowbtn {
+            max-width: 350px;
+            width: 100%;
+            text-align: center;
+            margin: 20px auto 0;
+            display: block;
+            border: none;
+        }
+
+
+    }
+
+
+
+
+
+
+}
+
+.switchbox__head {
+    margin-bottom: 18px;
+
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 40px;
+        height: 20px;
+        background: grey;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    label:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked+label {
+        background: #1CA99A;
+    }
+
+    input:checked+label:after {
+        left: calc(100% - 2px);
+        transform: translateX(-100%);
+    }
+
+}
+
+.switchbox__body {
+    p {
+        color: #646464;
+        font-size: 14px;
+        line-height: 150%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+    .settingcook {
+        .modal-dialog {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media(max-width:1399.8px) {
+    #cookie .modal-dialog {
+        max-width: 1000px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    #cookie .modal-dialog {
+        max-width: 900px;
+    }
+}
+
+@media(max-width:991.8px) {
+    #cookie .modal-dialog {
+        max-width: 700px;
+    }
+
+    .cookiepopup .cookiepopup__descr {
+        padding-right: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .cookiepopup .cookiepopup__btns {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+
+    #cookie .modal-dialog,
+    #managecookie .modal-dialog {
+        max-width: calc(100% - 40px);
+    }
+
+    .cookiepopup .cookiepopup__icon {
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        transform: translate(0, -50%);
+    }
+
+    #cookie .modal-dialog {
+        position: relative;
+        margin-top: 50px;
+        width: auto;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    #cookie .modal-dialog,
+    #managecookie .modal-dialog {
+        max-width: 100%;
+    }
+
+    #cookie .modal-content {
+        padding: 40px 20px 20px 20px;
+        border-radius: 12px;
+    }
+
+    .settingcook .settingswrapper {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .settingcook .settingswrapper .switchsect .switchbox {
+        padding: 10px 0;
+    }
+
+
+}

@@ -165,17 +165,7 @@ $(document).ready(function () {
         });
     }
     
-    // player
-    // if ($('video').length > 0) {
-    //     const player = new Plyr('#player');
-
-    //     $(document).click(function (event) {
-    //         let $target = $(event.target);
-    //         if (!$target.closest('.modal-body').length) {
-    //             player.pause();
-    //         }
-    //     });
-    // }
+ 
     if ($('video').length > 0) {
         const players = $('[id^="player-"]').map(function () {
             return new Plyr(this);
@@ -190,6 +180,9 @@ $(document).ready(function () {
         });
     }
 
+    window.onload = () => {
+        $('#cookie').modal('show');
+    }
     
 
 });

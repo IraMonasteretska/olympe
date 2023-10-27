@@ -18,3 +18,162 @@
         padding-top: 0;
     }
 }
+
+.aboutplatform.partners {
+    h3 {
+        margin-bottom: 70px;
+    }
+}
+
+.aboutplatform.partners.str {
+    background: #fff;
+
+    .aboutmanufwrap {
+        max-width: 100%;
+    }
+
+    .aboutplatformbox .aboutplatformbox__info {
+        padding-left: 20px;
+    }
+
+    .aboutplatformbox .aboutplatformbox__info p {
+        font-size: 15px;
+    }
+}
+
+.resorsessection.partners {
+    padding-top: 40px;
+    background: #fff;
+
+    .resbox__descr {
+        padding-left: 20px;
+
+        p {
+            max-width: 460px;
+        }
+    }
+}
+
+.contsection {
+    padding: 40px 0 110px;
+
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .labtext {
+        text-align: left;
+        margin-bottom: 6px;
+        color: #222;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    form {
+        max-width: 560px;
+    }
+    .inputfield .select2-container .select2-selection--single {
+        border: 1px solid #E9EEF3;
+    }
+    .inputfield .select2-container--default .select2-selection--single .select2-selection__rendered {
+        background: #E9EEF3;
+        border-radius: 5px;
+    }
+
+    input:not(.yellowbtn) {
+        background: #E9EEF3;
+        border: 1px solid #E9EEF3;
+    }
+
+    textarea {
+        background: #E9EEF3;
+        border: 1px solid #E9EEF3;
+    }
+
+    .yellowbtn {
+        width: 100%;
+        border: none;
+    }
+}
+
+
+@media(max-width:1399.8px) {
+
+    .partners-slider h3 {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+
+    .partners-slider {
+        padding-bottom: 0;
+    }
+
+}
+
+@media(max-width:991.8px) {
+
+    .aboutplatform {
+        padding-top: 60px;
+    }
+
+    .resorsessection h3 {
+        margin-bottom: 40px;
+    }
+
+    .contsection form {
+        max-width: 100%;
+    }
+
+    .contsection p {
+        margin-bottom: 40px;
+    }
+
+    .contsection .imgwrap {
+        display: none;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .aboutplatform.partners h3,
+    .resorsessection h3 {
+        margin-bottom: 30px;
+    }
+
+    .resbox .resbox__icon {
+        max-width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .resbox .resbox__descr {
+        max-width: calc(100% - 60px);
+        flex: 0 0 calc(100% - 60px);
+    }
+
+    .resorsessection.partners .resbox__descr p {
+        margin-bottom: 0;
+    }
+
+    .resorsessection.partners {
+        padding-bottom: 20px;
+    }
+
+    .contsection p br {
+        display: none;
+    }
+
+    .contsection {
+        padding-bottom: 60px;
+    }
+
+}

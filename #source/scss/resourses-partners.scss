@@ -78,9 +78,11 @@
     form {
         max-width: 560px;
     }
+
     .inputfield .select2-container .select2-selection--single {
         border: 1px solid #E9EEF3;
     }
+
     .inputfield .select2-container--default .select2-selection--single .select2-selection__rendered {
         background: #E9EEF3;
         border-radius: 5px;
@@ -145,6 +147,7 @@
 }
 
 @media(max-width:575.8px) {
+
     .aboutplatform.partners h3,
     .resorsessection h3 {
         margin-bottom: 30px;

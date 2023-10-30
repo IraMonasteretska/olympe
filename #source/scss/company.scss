@@ -1,0 +1,359 @@
+.companywelcome {
+    padding: 175px 0 94px;
+    margin-top: -97px;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../img/company/company-bg2.png') no-repeat center / 100% 100%;
+    }
+
+    .imgwrap {
+        text-align: center;
+    }
+}
+
+.companywelcome__textblock {
+    h1 {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .subtitle {
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    .descr {
+        color: #fff;
+        margin-bottom: 40px;
+        font-size: 15px;
+        font-weight: 500;
+        max-width: 622px;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .yellowbtn {
+        min-width: 270px;
+        text-align: center;
+    }
+}
+
+.aboutplatform.company {
+    padding: 120px 0 120px;
+
+    h3 {
+        margin-bottom: 70px;
+    }
+}
+
+.team {
+    padding: 110px 0 100px;
+
+    h3 {
+        margin-bottom: 35px;
+    }
+
+    .description {
+        margin: 0 auto;
+        max-width: 860px;
+        color: #3B3838;
+        font-size: 17px;
+        text-align: center;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.team__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -11px;
+    margin-right: -11px;
+    padding-top: 20px;
+
+    .teamboxcol {
+        padding-left: 11px;
+        padding-right: 11px;
+        width: 100%;
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+}
+
+.teambox {
+    text-align: center;
+    margin-top: 50px;
+
+    .name {
+        margin-bottom: 15px;
+        color: #222;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .prof {
+        margin: 0;
+        color: #3B3838;
+        font-size: 16px;
+    }
+}
+
+.teambox__img {
+    width: 100%;
+    height: 270px;
+    border-radius: 50%;
+    // border: 20px solid #F2F6FB;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #F2F6FB 0%, rgba(242, 246, 251, 0.00) 100%);
+    padding: 20px;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        border-radius: 50%;
+    }
+}
+
+.realizing {
+    padding: 160px 0 175px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 635px;
+        background: url('../img/company/company-bg3.png') no-repeat center bottom / 100% 100%;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.realizing__textblock {
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    .descr {
+        max-width: 530px;
+        color: #3B3838;
+        margin-bottom: 40px;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .yellowbtn {
+        min-width: 270px;
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width:1499.8px) {
+
+    .teambox__img {
+        height: 240px;
+    }
+
+    .realizing:after {
+        background-size: auto;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .teambox__img {
+        height: 205px;
+    }
+
+    .team {
+        padding-bottom: 40px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    
+    .aboutplatform.company {
+        padding-bottom: 60px;
+    }
+
+    .team__wrapper .teamboxcol {
+        max-width: 33.333%;
+        flex: 0 0 33.333%;
+    }
+
+    .teambox__img {
+        height: 297px;
+    }
+
+    .realizing:after {
+        background-size: auto 100%;
+        height: 550px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .companywelcome .imgwrap {
+        margin-top: 40px;
+    }
+
+    .aboutplatform.company {
+        padding: 80px 0;
+    }
+
+    .teambox__img {
+        position: relative;
+        width: 100%;
+        padding:0 0 100% 0;
+        height: 0;
+    }
+     
+    .teambox__img img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .teambox .name {
+        margin-bottom: 5px;
+    }
+
+    .realizing {
+        padding: 100px 0 50px;
+    }
+
+    .realizing:after {
+        height: 680px;
+    }
+
+    .companywelcome:after {
+        background-size: auto 100%;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .realizing:after {
+        height: 600px;
+    }
+
+    .companywelcome {
+        padding-top: 150px;
+    }
+
+    .companywelcome__textblock h1 {
+        margin-bottom: 20px;
+    }
+
+    .companywelcome__textblock .subtitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .companywelcome__textblock .descr {
+        font-weight: 400;
+    }
+
+    .companywelcome__textblock .yellowbtn {
+        width: 100%;
+    }
+
+    
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .companywelcome:after {
+        background-size: auto 100%;
+        background-position: top right;
+    }
+
+    .aboutplatform.company {
+        padding: 60px 0 20px;
+    }
+
+    .aboutplatform.company h3 {
+        margin-bottom: 30px;
+    }
+
+    .team h3,
+    .realizing__textblock h3 {
+        margin-bottom: 20px;
+    }
+
+    .team .description {
+        font-size: 15px;
+    }
+
+    .team__wrapper .teamboxcol {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .teambox .prof,
+    .realizing__textblock .descr {
+        font-size: 15px;
+    }
+
+    .teambox .name {
+        font-size: 16px;
+    }
+
+    .realizing {
+        padding-top: 60px;
+    }
+
+    .realizing:after {
+        height: 430px;
+    }
+
+    .team {
+        padding-bottom: 20px;
+        padding-top: 70px;
+    }
+}

@@ -198,6 +198,12 @@
     }
 }
 
+@media(max-width:991.8px) {
+    .trustedby {
+        padding-top: 80px;
+    }
+}
+
 @media(max-width:767.8px) {
     .composableoperations__wrap .composableoperation {
         max-width: 100%;
@@ -212,7 +218,7 @@
 
 }
 
-@media(max-width:767.8px) {
+@media(max-width:575.8px) {
     h2 br {
         display: none;
     }
@@ -260,6 +266,11 @@
 
     .stepinfo {
         margin-bottom: 30px;
+    }
+
+    .trustedby.operations .getstartedsect {
+        margin-top: 20px;
+        padding-bottom: 0;
     }
 
 }

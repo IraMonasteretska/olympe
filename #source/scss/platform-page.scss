@@ -265,6 +265,14 @@
     .chooseolymp__box {
         min-height: 100px;
     }
+
+    .technicalpos {
+        padding: 100px 0 0 0;
+    }
+
+    .getstartedsect {
+        margin-top: 160px;
+    }
 }
 
 @media(max-width:1199.8px) {
@@ -423,10 +431,11 @@
         padding-bottom: 30px;
     }
 
+    .getstartedsect h3 {
+        margin-bottom: 20px;
+    }
 
-
-
-
+    
 
 
     .chooseolymp h3 {

@@ -209,6 +209,10 @@
         padding-bottom: 40px;
     }
 
+    .aboutplatform.company {
+        padding-bottom: 60px;
+    }
+
 }
 
 @media(max-width:1199.8px) {
@@ -365,5 +369,17 @@
         .imgwrap {
             margin-top: 30px;
         }
+    }
+
+
+    .companywelcome:after {
+        background: url(../img/company/mobilebg.png) no-repeat center/100% 100%;
+    }
+    
+}
+
+@media(max-width:420.8px) {
+    .companywelcome:after {
+        background: url(../img/company/mobilebg.png) no-repeat center/auto 100%;
     }
 }

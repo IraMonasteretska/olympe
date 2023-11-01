@@ -442,6 +442,10 @@ header.header_whitetg {
     z-index: 15;
 }
 
+header.header .submenuwrap .submenulink .submenulink__text p:not(.title) {
+    font-weight: 400;
+}
+
 // font-family: 'Lexend Deca', sans-serif;
 
 

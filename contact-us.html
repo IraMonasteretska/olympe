@@ -76,7 +76,7 @@
                                                             </p>
                                                         </div>
                                                     </a>
-                                                    <a href="#" class="submenulink">
+                                                    <!-- <a href="#" class="submenulink">
                                                         <div class="submenulink__icon">
                                                             <img src="img/svg/menuic-violet.svg" alt="img">
                                                         </div>
@@ -86,7 +86,7 @@
                                                                 Empower Local Data Processing.
                                                             </p>
                                                         </div>
-                                                    </a>
+                                                    </a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@
                                                             </p>
                                                         </div>
                                                     </a>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -177,7 +177,8 @@
                         <div class="col-lg-6">
                             <div class="contact__info">
                                 <div class="contact__infobox">
-                                    <p class="title">Follow us:</p>
+                                    <!-- fix - Забрав ":" -->
+                                    <p class="title">Follow us</p>
                                     <ul class="contact-soclist">
                                         <li>
                                             <a href="#" target="_blank">
@@ -202,7 +203,8 @@
                                     </ul>
                                 </div>
                                 <div class="contact__infobox">
-                                    <p class="title">Headquarters address:</p>
+                                    <!-- fix - Забрав ":" "s" -->
+                                    <p class="title">Headquarter address</p>
                                     <p class="descr">
                                         <img src="img/contact/loc-icon.svg" alt="location">
                                         <a href="#" target="_blank">Bâtiment I, EPFL Innovation Park, 1015<br> Lausanne
@@ -210,15 +212,18 @@
                                     </p>
                                 </div>
                                 <div class="contact__infobox">
-                                    <p class="title">Email Address:</p>
+                                    <!-- fix - Забрав ":" -->
+                                    <p class="title">Email Address</p>
                                     <p class="descr">
                                         <img src="img/contact/mail-icon.svg" alt="location">
                                         <a href="mailto:info@olympe.io">info@olympe.io</a>
                                     </p>
-                                    <p class="descr">
+                                    <!-- fix - лише 1 пошта має бути -->
+
+                                    <!-- <p class="descr">
                                         <img src="img/contact/mail-icon.svg" alt="location">
                                         <a href="mailto:info@olympe.io">info@olympe.io</a>
-                                    </p>
+                                    </p> -->
                                 </div>
                             </div>
                         </div>
@@ -227,32 +232,34 @@
                             <div class="formwrapper">
                                 <p class="title">Contact form</p>
                                 <p>
-                                    Thank you for contacting us. To better assist you, please select the most
+                                    <!-- fix - text -->
+                                    To better assist you, please select the most
                                     relevant reason for your inquiry from the options below.
                                 </p>
                                 <form action="#">
                                     <div class="row">
+                                        <!-- fix - поля обовязкові додав -->
                                         <div class="col-12">
                                             <div class="inputfield">
                                                 <p class="labtext">Choose a topic</p>
                                                 <select class="js-example-basic-single" name="state">
                                                     <option value=""></option>
-                                                    <option value="1">Product and Sales</option>
+                                                    <option value="1">Product demo</option>
                                                     <option value="2">Technical Support</option>
                                                     <option value="3">General Inquiries and Feedback</option>
-                                                  </select>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="inputfield">
                                                 <label for="fname">First name</label>
-                                                <input type="text" id="fname">
+                                                <input type="text" id="fname" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="inputfield">
                                                 <label for="lname">Last name</label>
-                                                <input type="text" id="lname">
+                                                <input type="text" id="lname" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
@@ -263,8 +270,8 @@
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="inputfield">
-                                                <label for="email">Email Address</label>
-                                                <input type="email" id="email">
+                                                <label for="email">Email address</label>
+                                                <input type="email" id="email" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
@@ -281,7 +288,10 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <input type="submit" value="Submit" class="formbtn yellowbtn">
+                                            <!-- <input type="submit" value="Submit" class="formbtn yellowbtn"> -->
+                                            <!-- fix кнопка на попап (на інпут не вішає) -->
+                                            <button data-bs-toggle="modal" data-bs-target="#thanks"
+                                                class="formbtn yellowbtn">Submit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -327,11 +337,10 @@
                             <li><a href="#">Privacy Policy </a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Edge Computing</a></li>
+                            <!-- <li><a href="#">Edge Computing</a></li> -->
+                            <li><a href="#">Procurement</a></li>
                             <li><a href="#">Manufacturing</a></li>
                             <li><a href="#">Operations</a></li>
-                            <li><a href="#">Procurement</a></li>
-                            <li><a href="#">Supply Chain</a></li>
                         </ul>
                         <ul>
                             <li><a href="#">Developers</a></li>
@@ -352,6 +361,23 @@
         </div>
     </footer>
     <div class="menuoverlay"></div>
+
+    <!-- fix - модалка -->
+    <div class="modal fade thanks" id="thanks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>
+                        Thanks for getting in touch!<br> We'll be in contact with you shortly.
+                    </p>
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close" class="yellowbtn">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper.js"></script>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/lib/aos.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -165,7 +166,7 @@
         </header>
 
         <main class="main">
-            <section class="platformwelcomesect manufacturing pricing">
+            <section class="platformwelcomesect pricing">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
@@ -182,18 +183,17 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </section>
 
+            <!-- Summary -->
             <section class="pricingsect bluesect">
                 <div class="container">
                     <div class="pricingsect__head">
-                        <h2 class="pricingsect__title">
+                        <h2 class="pricingsect__title" data-aos="fade-up" data-aos-duration="1500">
                             Summary
                         </h2>
-                        <p class="pricingsect__subtitle">
+                        <p class="pricingsect__subtitle" data-aos="fade-up" data-aos-duration="1500">
                             Ut pulvinar lacus libero aliquam pellentesque metus facilisis natoque dictumst. Nulla
                             faucibus
                             sit eu diam. Tempus praesent eget condimentum massa aliquam aliquam ultrices laoreet.
@@ -214,19 +214,9 @@
                                 Premium
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
                             <li>
                                 Ideal for
-                                <div class="pricingtable__row-info">
-                                    <img src="img/pricing/info-icon.svg" alt="info">
-                                    <div class="pricingtable__row-tooltip">
-                                        <p>
-                                            Defined as a physical user interacting with the Olympe Solutions ecosystem,
-                                            regardless of the number of applications used and the number of logins over
-                                            a month
-                                        </p>
-                                    </div>
-                                </div>
                             </li>
                             <li>
                                 Discovery and sandbox for AI and innovation projects
@@ -238,7 +228,7 @@
                                 Operate large scale solutions and their lifecycle
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
                             <li>
                                 # Users
                                 <div class="pricingtable__row-info">
@@ -262,16 +252,15 @@
                                 500
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
                             <li>
                                 # Endpoints
                                 <div class="pricingtable__row-info">
                                     <img src="img/pricing/info-icon.svg" alt="info">
                                     <div class="pricingtable__row-tooltip">
                                         <p>
-                                            Defined as a physical user interacting with the Olympe Solutions ecosystem,
-                                            regardless of the number of applications used and the number of logins over
-                                            a month
+                                            Defined as the total number of API endpoints and remote actions allowing
+                                            interaction between front-end and back-end systems.
                                         </p>
                                     </div>
                                 </div>
@@ -286,19 +275,9 @@
                                 250
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
                             <li>
                                 # Apps
-                                <div class="pricingtable__row-info">
-                                    <img src="img/pricing/info-icon.svg" alt="info">
-                                    <div class="pricingtable__row-tooltip">
-                                        <p>
-                                            Defined as a physical user interacting with the Olympe Solutions ecosystem,
-                                            regardless of the number of applications used and the number of logins over
-                                            a month
-                                        </p>
-                                    </div>
-                                </div>
                             </li>
                             <li>
                                 Unlimited
@@ -310,16 +289,14 @@
                                 Unlimited
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
                             <li>
                                 Monthly <br>Subscription
                                 <div class="pricingtable__row-info">
                                     <img src="img/pricing/info-icon.svg" alt="info">
                                     <div class="pricingtable__row-tooltip">
                                         <p>
-                                            Defined as a physical user interacting with the Olympe Solutions ecosystem,
-                                            regardless of the number of applications used and the number of logins over
-                                            a month
+                                            Includes a 20% discount for yearly subscription.
                                         </p>
                                     </div>
                                 </div>
@@ -337,9 +314,9 @@
                                 4’400.-
                             </li>
                         </ul>
-
                     </div>
-                    <div class="pricingsect__btn">
+                    <div class="pricingsect__btn" data-aos="fade-up" data-aos-duration="1500" data-bs-toggle="modal"
+                        data-bs-target="#pricingModal">
                         <a href="#" class="yellowbtn">
                             Get Started Now
                         </a>
@@ -347,13 +324,13 @@
                 </div>
             </section>
 
+            <!-- Pricing Details -->
             <section class="pricingsect whitesect">
                 <div class="container">
                     <div class="pricingsect__head">
-                        <h2 class="pricingsect__title">
+                        <h2 class="pricingsect__title" data-aos="fade-up" data-aos-duration="1500">
                             Pricing Details
                         </h2>
-                       
                     </div>
                     <div class="pricingtable blue">
                         <ul class="pricingtable__row pricingtable__head">
@@ -370,7 +347,7 @@
                                 Premium
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
                             <li>
                                 # Users
                             </li>
@@ -384,7 +361,7 @@
                                 500
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
                             <li>
                                 # Endpoints
                             </li>
@@ -398,7 +375,7 @@
                                 250
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
                             <li>
                                 # Apps
                             </li>
@@ -412,21 +389,21 @@
                                 Unlimited
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
                             <li>
-                               <b>Deploy. / Storage</b>
+                                <b>Deploy. / Storage</b>
                             </li>
                             <li>
-                               
+
                             </li>
                             <li>
-                               
+
                             </li>
                             <li>
-                                
+
                             </li>
                         </ul>
-                        <ul class="pricingtable__row">
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
                             <li>
                                 Environments
                             </li>
@@ -440,6 +417,889 @@
                                 3
                             </li>
                         </ul>
+                        <div class="morecontent">
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    Back-end perf
+                                    <div class="pricingtable__row-info">
+                                        <img src="img/pricing/info-icon.svg" alt="info">
+                                        <div class="pricingtable__row-tooltip">
+                                            <p>
+                                                vCPU / RAM
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    0.5 / 1.0
+                                </li>
+                                <li>
+                                    1.0 / 2.0
+                                </li>
+                                <li>
+                                    1.0 / 4.0
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    <p> Storage</p>
+                                    <div class="pricingtable__row-info">
+                                        <img src="img/pricing/info-icon.svg" alt="info">
+                                        <div class="pricingtable__row-tooltip">
+                                            <p>
+                                                Inc. File & Database
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        1GB
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        10GB
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        100GB
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Platform Deploy.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Olympe Cloud
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Olympe Cloud
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Cloud / Onpremise
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Back-ends/DB
+                                        deploy.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Olympe Cloud
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Olympe Cloud
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Cloud / Onpremise
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Support
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Documentation
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="check">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="check">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="check">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Support Team
+                                    </p>
+                                </li>
+                                <li class="onefield">
+                                    <p>
+                                        Optional package
+                                    </p>
+                                </li>
+
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" ata-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Uptime
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        No SLA
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        99.5
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        99.8
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricingtable__more-btn" data-aos="fade" data-aos-duration="1500"
+                            ata-aos-offset="-20">
+                            <img src="img/pricing/arrow-down.svg" alt="more">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Platform Capabilities -->
+            <section class="pricingsect whitesect">
+                <img class="pricingsect__circle1" src="img/circle-bg5.png" alt="img">
+                <img class="pricingsect__circle2" src="img/circle-bg6.png" alt="img">
+                <div class="container">
+                    <div class="pricingsect__head">
+                        <h2 class="pricingsect__title" data-aos="fade-up" data-aos-duration="1500">
+                            Platform Capabilities
+                        </h2>
+
+                    </div>
+                    <div class="pricingtable blue">
+                        <ul class="pricingtable__row pricingtable__head">
+                            <li>
+                                <img src="img/logo-black.png" alt="icon">
+                            </li>
+                            <li>
+                                Basic
+                            </li>
+                            <li>
+                                Standard
+                            </li>
+                            <li>
+                                Premium
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                API-Development
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Data Integration
+                            </li>
+                            <li>
+                                Relational
+                            </li>
+                            <li>
+                                Rel. + Graph.
+                            </li>
+                            <li>
+                                Rel. + Graph.
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Data Modelling
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Logic Editor
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Visual Editor Draw
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                        </ul>
+                        <div class="morecontent">
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Apps Monitoring
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Bricks Documentation
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    SSO (Oauth/SAML)
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Secrets Management
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Auditlog (workflow)
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Offline Apps
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Branching
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    High Availability
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pricingtable__more-btn" data-aos="fade" data-aos-duration="1500"
+                            ata-aos-offset="-20">
+                            <img src="img/pricing/arrow-down.svg" alt="more">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Components Capabilities/Price list -->
+            <section class="pricingsect bluesect">
+                <div class="container">
+                    <div class="pricingsect__head">
+                        <h2 class="pricingsect__title" data-aos="fade-up" data-aos-duration="1500">
+                            Components Capabilities
+                        </h2>
+                    </div>
+                    <div class="pricingtable white">
+                        <ul class="pricingtable__row pricingtable__head">
+                            <li>
+                                <img src="img/logo-black.png" alt="icon">
+                            </li>
+                            <li>
+                                Basic
+                            </li>
+                            <li>
+                                Standard
+                            </li>
+                            <li>
+                                Premium
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Olympe Libraries
+                            </li>
+                            <li>
+                                Base
+                                <div class="pricingtable__row-info">
+                                    <img src="img/pricing/info-icon.svg" alt="info">
+                                    <div class="pricingtable__row-tooltip">
+                                        <p>
+                                            Common Libraries: Libraries that facilitate the straightforward building of
+                                            front-end and back-end solutions, including integration with MS Office.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                Extended
+                                <div class="pricingtable__row-info">
+                                    <img src="img/pricing/info-icon.svg" alt="info">
+                                    <div class="pricingtable__row-tooltip">
+                                        <p>
+                                            Complementary Domain Libraries: Libraries that include ERP integrations and
+                                            advanced charting capabilities.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                Extended
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Private Libraries
+                            </li>
+                            <li>
+                                30 components
+                            </li>
+                            <li>
+                                Unlimited
+                            </li>
+                            <li>
+                                Unlimited
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Ai-generated components
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Components Insight
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                        </ul>
+                        <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500" data-aos-offset="-20">
+                            <li>
+                                Components Analytics
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+                                <img src="img/pricing/check-icon.svg" alt="icon" class="check-icon">
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="pricingsect__pricelist">
+                        <div class="pricingsect__head">
+                            <h2 class="pricingsect__title" data-aos="fade-up" data-aos-duration="1500">
+                                Price list
+                            </h2>
+                            <ul class="pricingtable__tabs" data-aos="fade" data-aos-duration="1500"
+                                ata-aos-offset="-20">
+                                <li class="active" data-target="mountly">
+                                    Monthly plan
+                                </li>
+                                <li data-target="yearly">
+                                    Yearly plan
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pricingtable white">
+                        <ul class="pricingtable__row pricingtable__head">
+                            <li>
+                                <img src="img/logo-black.png" alt="icon">
+                            </li>
+                            <li>
+                                Basic
+                            </li>
+                            <li>
+                                Standard
+                            </li>
+                            <li>
+                                Premium
+                            </li>
+                        </ul>
+                        <div class="tab-content mountly">
+                            <div class="pricingtable__name" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <img src="img/pricing/subscriptions.svg" alt="">
+                                <p>
+                                    Subscriptions
+                                </p>
+                            </div>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Monthly
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>200.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>1’500.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>5’500.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Yearly <span>(20% discount)</span>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>160.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>1’200.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>4’400.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Extra users
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>20.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>15.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>10.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Extra endpoint
+                                    <div class="pricingtable__row-info">
+                                        <img src="img/pricing/info-icon.svg" alt="info">
+                                        <div class="pricingtable__row-tooltip">
+                                            <p>
+                                                <a
+                                                    href="https://design-sprint.com/mvp-30-days/?lnk">https://design-sprint.com/mvp-30-days/?lnk</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onefield">
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>20.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Extra environment
+                                </li>
+                                <li class="onefield">
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>150.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Extra perf. Pack <span>(0.5 vCPU / 1GB RAM)</span>
+                                    </p>
+                                </li>
+                                <li class="onefield">
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>50.-</b>
+                                </li>
+                            </ul>
+                            <div class="morecontent">
+                                <div class="pricingtable__name" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <img src="img/pricing/services.svg" alt="">
+                                    <p>
+                                        Services
+                                    </p>
+                                </div>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Onboarding Fee
+                                    </li>
+                                    <li>
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>3’000.-</b>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                            <b>5’000.-</b><br>
+                                            <span>(incl. 1 Training)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <b>On request</b>
+                                    </li>
+                                </ul>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Training / Certification
+                                    </li>
+                                    <li class="onefield">
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>1’000.- </b> / person
+                                    </li>
+                                </ul>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Support Package
+                                    </li>
+                                    <li class="onefield">
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>200.- </b> /h (min. 16h)
+                                    </li>
+                                </ul>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Delivery Services
+                                    </li>
+                                    <li class="onefield">
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>On request</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content yearly">
+                            <div class="pricingtable__name" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <img src="img/pricing/subscriptions.svg" alt="">
+                                <p>
+                                    Subscriptions
+                                </p>
+                            </div>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Monthly
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>300.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>1’500.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>3’500.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Yearly <span>(40% discount)</span>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>260.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>5’200.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>4’400.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Extra users
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>20.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>15.-</b>
+                                </li>
+                                <li>
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>10.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Extra endpoint
+                                    <div class="pricingtable__row-info">
+                                        <img src="img/pricing/info-icon.svg" alt="info">
+                                        <div class="pricingtable__row-tooltip">
+                                            <p>
+                                                <a
+                                                    href="https://design-sprint.com/mvp-30-days/?lnk">https://design-sprint.com/mvp-30-days/?lnk</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onefield">
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>20.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    Extra environment
+                                </li>
+                                <li class="onefield">
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>150.-</b>
+                                </li>
+                            </ul>
+                            <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                data-aos-offset="-20">
+                                <li>
+                                    <p>
+                                        Extra perf. Pack <span>(0.5 vCPU / 1GB RAM)</span>
+                                    </p>
+                                </li>
+                                <li class="onefield">
+                                    <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                    <b>50.-</b>
+                                </li>
+                            </ul>
+                            <div class="morecontent">
+                                <div class="pricingtable__name" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <img src="img/pricing/services.svg" alt="">
+                                    <p>
+                                        Services
+                                    </p>
+                                </div>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Onboarding Fee
+                                    </li>
+                                    <li>
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>3’000.-</b>
+                                    </li>
+                                    <li>
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>5’000.-</b><br>
+                                        <span>(incl. 1 Training)</span>
+                                    </li>
+                                    <li>
+                                        <b>On request</b>
+                                    </li>
+                                </ul>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Training / Certification
+                                    </li>
+                                    <li class="onefield">
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>1’000.- </b>/ person
+                                    </li>
+                                </ul>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Support Package
+                                    </li>
+                                    <li class="onefield">
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>200.- </b>/h (min. 16h)
+                                    </li>
+                                </ul>
+                                <ul class="pricingtable__row" data-aos="fade" data-aos-duration="1500"
+                                    data-aos-offset="-20">
+                                    <li>
+                                        Delivery Services
+                                    </li>
+                                    <li class="onefield">
+                                        <img src="img/pricing/currency.svg" alt="currency" class="currency">
+                                        <b>On request</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="pricingtable__more-btn" data-aos="fade" data-aos-duration="1500">
+                            <img src="img/pricing/arrow-down.svg" alt="more">
+                        </div>
+                    </div>
+                    <div class="pricingsect__btn" data-aos="fade-up" data-aos-duration="1500" data-bs-toggle="modal"
+                        data-bs-target="#pricingModal">
+                        <a href="#" class="yellowbtn">
+                            Get Started Now
+                        </a>
                     </div>
                 </div>
             </section>
@@ -505,7 +1365,7 @@
             <section class="pricingcontact">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-xxl-6 col-lg-8">
                             <h2 class="pricingcontact__title">
                                 Contact
                             </h2>
@@ -543,7 +1403,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-xxl-6 col-lg-4">
                             <div class="pricingcontact__image">
                                 <img src="img/pricing/pricing-contacts.svg" alt="">
                             </div>
@@ -552,7 +1412,6 @@
                 </div>
                 <img src="img/pricing/contact-back.png" alt="background" class="background">
             </section>
-
 
         </main>
 
@@ -612,12 +1471,59 @@
                 </p>
             </div>
         </footer>
+
+        <!-- Modal -->
+        <div class="modal fade pricingpopup" id="pricingModal" tabindex="-1" aria-labelledby="pricingModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered pricing-popup">
+                <div class="modal-content">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="img/pricing/close button.svg" alt="close">
+                    </button>
+                    <div class="modal-body">
+                        <div class="pricing-popup__head">
+                            <p class="title">
+                                Pricing Details
+                            </p>
+                            <p class="subtitle">
+                                Nulla faucibus sit eu diam. Tempus praesent eget condimentum massa aliquam aliquam
+                                ultrices laoreet.
+                            </p>
+                        </div>
+                        <div class="pricing-popup__form">
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" placeholder="Organization">
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <select class="js-example-basic-single" name="state">
+                                        <option value=""></option>
+                                        <option value="1">Product demo</option>
+                                        <option value="2">Technical Support</option>
+                                        <option value="3">General Inquiries and Feedback</option>
+                                    </select>
+                                </div>
+                                <input type="submit" value="Send" class="formbtn yellowbtn">
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="menuoverlay"></div>
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/lib/aos.js"></script>
     <script src="js/common.js"></script>
 </body>

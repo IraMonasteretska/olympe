@@ -183,6 +183,25 @@ $(document).ready(function () {
     window.onload = () => {
         $('#cookie').modal('show');
     }
+
+
+    // pricing pages scripts ------ //
+
+    // more btn
+    $('.pricingtable__more-btn').click(function() {
+        $(this).toggleClass('active'); 
+        $(this).closest('.pricingtable ').find('.morecontent').slideToggle(); 
+    });
+
+    // tabs
+    $('.pricingtable__tabs>li').click(function() {
+        var target = $(this).attr('data-target');
+        console.log(target);
+        $('.pricingtable__tabs>li').removeClass('active'); 
+        $(this).addClass('active'); 
+        $('.tab-content').hide(); 
+        $('.' + target).show(); 
+    });
     
 
 });

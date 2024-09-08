@@ -53,6 +53,8 @@
 
 .pricingsect__title {
     margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
 }
 
 .pricingsect__subtitle {
@@ -127,11 +129,11 @@
             width: 75%
         }
 
-        .check-icon {
-            width: 24px;
-            height: 24px;
-            background-size: cover;
-        }
+        // .check-icon {
+        //     width: 24px;
+        //     height: 24px;
+        //     background-size: cover;
+        // }
 
         .currency {
             width: 18px;
@@ -142,7 +144,7 @@
 
         &:first-child {
             justify-content: flex-start;
-            align-items: flex-end;
+            // align-items: flex-end;
             text-align: left;
             padding-left: 15px;
         }
@@ -183,8 +185,7 @@
 }
 
 .pricingtable__row-info {
-    margin-left: 5px;
-    margin-bottom: 2px;
+    margin: auto 0 2px 5px;
 
     img {
         width: 20px;
@@ -312,6 +313,7 @@
     background-color: #fff;
     border-radius: 40px;
     padding: 7px;
+    margin: 0;
 
     li {
         color: #6851A2;
@@ -432,6 +434,7 @@
             }
         }
     }
+    
 
     .input-field .select2 {
         margin-bottom: 45px;
@@ -463,6 +466,9 @@
         border: none;
         width: 100%;
     }
+}
+.select2-dropdown {
+    z-index: 9999!important;
 }
 
 
@@ -561,6 +567,7 @@
     padding-bottom: 40px;
     display: flex;
     align-items: flex-end;
+    height: 100%;
 }
 
 
@@ -607,12 +614,149 @@
 }
 
 @media (max-width: 1199.8px) {
+    .pricingsect__head {
+        margin: 0px auto 45px;
+    }
+
+    .pricingsect .pricingsect__circle1 {
+        left: -70px;
+        width: 300px;
+    }
+
+    .pricingsect .pricingsect__circle2 {
+        bottom: -50px;
+        right: -150px;
+        width: 300px;
+    }
+
+    .pricingsect.whitesect {
+        padding: 120px 0 50px;
+    }
+
+    .pricingcontact__inner {
+        padding-bottom: 130px;
+    }
+
     .pricingsect {
         padding: 80px 0 60px;
+    }
+
+    .pricingtable__row li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991.8px) {
+    .pricingsect.whitesect {
+        padding: 60px 0 50px;
+    }
+
+    .pricingsect__btn {
+        margin: 60px auto 0;
+    }
+
+    .pricingtable__name {
+        margin-bottom: 3px;
+    }
+
+    .pricingtable__row {
+        margin-bottom: 3px;
+    }
+
+    .pricingtable__row li {
+        width: calc(25% - 3px);
+    }
+
+    .pricingsect__pricelist {
+        margin-top: 100px;
+    }
+
+    .pricingtable__more-btn {
+        bottom: -20px;
+        left: calc(50% - 20px);
+        width: 44px;
+        height: 44px;
+    }
+
+    .pricingtable__more-btn img {
+        width: 18px;
+    }
+
+    .pricingtable__row {
+        min-height: 65px;
+    }
+
+    .pricingtable__row-info {
+        margin: auto 0 13px 5px;
+    }
+
+    .pricingtable__row.pricingtable__head li img {
+        width: 85px;
+    }
+
+    .pricingtable__row li {
+        font-size: 14px;
+    }
+
+    .pricingtable__row li {
+        padding: 10px 10px;
+    }
+
+    .pricingcontact__image img {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .pricingcontact {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 767.8px) {
+    .pricingcontact__inner {
+        padding-bottom: 80px;
+    }
+    .pricingcontact__inner{
+        flex-wrap: wrap;
+    }
+    .pricingcontact__meeting{
+        margin: 0 0 50px;
+        width: 100%;
+    }
+    .pricingcontact__info{
+        width: 100%;
+    }
+    .pricingsect__pricelist {
+        margin-top: 70px;
+    }
+
+    .pricingtable__more-btn {
+        bottom: 10px;
+    }
+
+    .pricingtable__row li {
+        font-size: 16px;
+    }
+
+    .pricingtable__name{
+        width: 800px;
+    }
+    .pricingtable__row {
+        min-height: 65px;
+        width: 800px;
+    }
+
+    .pricingtable {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 30px;
     }
 }
 
 @media (max-width: 575.8px) {
+    .pricingsect {
+        padding: 70px 0 25px;
+    }
     .platformwelcomesect.pricing img {
         margin-bottom: 0;
     }
@@ -628,5 +772,37 @@
 
     .pricing-popup__head .subtitle {
         font-size: 14px;
+    }
+    .pricingsect+.trustedby {
+        padding-top: 0;
+    }
+    .pricingsect .pricingsect__circle2 {
+        right: -100px;
+        width: 250px;
+    }
+    .pricingsect__subtitle {
+        font-size: 15px;
+    }
+    .pricingsect__title {
+        margin-bottom: 25px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .pricingsect__btn {
+        margin: 45px auto 0;
+    }
+
+    .pricingtable__tabs {
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+        }
+    }
+
+    .pricingtable__tabs li+li {
+        margin: 15px 0 0;
     }
 }

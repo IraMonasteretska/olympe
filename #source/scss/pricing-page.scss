@@ -129,11 +129,14 @@
             width: 75%
         }
 
-        // .check-icon {
-        //     width: 24px;
-        //     height: 24px;
-        //     background-size: cover;
-        // }
+        &.all-width-field {
+            width: 100%;
+            text-align: center!important;
+            justify-content: center!important;
+            b{
+                font-weight: 700;
+            }
+        }
 
         .currency {
             width: 18px;
@@ -435,7 +438,7 @@
             }
         }
     }
-    
+
 
     .input-field .select2 {
         margin-bottom: 45px;
@@ -468,8 +471,9 @@
         width: 100%;
     }
 }
+
 .select2-dropdown {
-    z-index: 9999!important;
+    z-index: 9999 !important;
 }
 
 
@@ -717,16 +721,20 @@
     .pricingcontact__inner {
         padding-bottom: 80px;
     }
-    .pricingcontact__inner{
+
+    .pricingcontact__inner {
         flex-wrap: wrap;
     }
-    .pricingcontact__meeting{
+
+    .pricingcontact__meeting {
         margin: 0 0 50px;
         width: 100%;
     }
-    .pricingcontact__info{
+
+    .pricingcontact__info {
         width: 100%;
     }
+
     .pricingsect__pricelist {
         margin-top: 70px;
     }
@@ -739,9 +747,10 @@
         font-size: 16px;
     }
 
-    .pricingtable__name{
+    .pricingtable__name {
         width: 800px;
     }
+
     .pricingtable__row {
         min-height: 65px;
         width: 800px;
@@ -758,6 +767,7 @@
     .pricingsect {
         padding: 70px 0 25px;
     }
+
     .platformwelcomesect.pricing img {
         margin-bottom: 0;
     }
@@ -774,20 +784,24 @@
     .pricing-popup__head .subtitle {
         font-size: 14px;
     }
+
     .pricingsect+.trustedby {
         padding-top: 0;
     }
+
     .pricingsect .pricingsect__circle2 {
         right: -100px;
         width: 250px;
     }
+
     .pricingsect__subtitle {
         font-size: 15px;
     }
+
     .pricingsect__title {
         margin-bottom: 25px;
     }
-    
+
 }
 
 @media (max-width: 425px) {

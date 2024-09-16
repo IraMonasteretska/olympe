@@ -146,6 +146,15 @@ header.header {
 
 // Header white
 
+header.header_white .header__nav>ul>li.header-btn>a, header.header_whitetg .header__nav>ul>li.header-btn>a {
+    color: #5e569b;
+    border-color: #5e569b;
+}
+header.header_white .header__nav>ul>li.header-btn>a:hover, header.header_whitetg .header__nav>ul>li.header-btn>a:hover {
+    color: #fff;
+    background: #5e569b;
+}
+
 header {
 
     .header__nav>ul>li {
@@ -238,12 +247,12 @@ header.header_whitetg {
     }
 
     .header__nav>ul>li:last-child a {
-        border-color: #5E569B;
-        color: #5E569B;
+        border-color: #FDC010;
+        color: #FDC010;
 
         &:hover {
             color: #fff;
-            background: #5E569B;
+            background: #FDC010;
         }
     }
 
@@ -576,14 +585,20 @@ header.header .submenuwrap .submenulink .submenulink__text p:not(.title) {
         color: #fff;
     }
 
-    header.header_white .header__nav>ul>li:last-child a,
-    header.header_whitetg .header__nav>ul>li:last-child a {
+    header.header_white .header__nav>ul>li.header-btn>a, header.header_whitetg .header__nav>ul>li.header-btn>a {
         color: #fff;
         border-color: #fff;
+        background-color: transparent;
+    }
+
+    header.header_white .header__nav>ul>li:last-child a,
+    header.header_whitetg .header__nav>ul>li:last-child a {
+        color: #fdc010;
+        border-color: #fdc010;
 
         &:hover {
-            background: #fff;
-            color: #5E569B;
+            background: #fdc010;
+            color: #fff;
         }
     }
 
@@ -656,16 +671,7 @@ header.header .submenuwrap .submenulink .submenulink__text p:not(.title) {
     }
 }
 
-@media(max-width:991.8px) {
 
-
-
-   
-
-
-
-
-}
 
 @media(max-width:767.8px) {
 
@@ -676,11 +682,6 @@ header.header .submenuwrap .submenulink .submenulink__text p:not(.title) {
     .header__logo img {
         max-width: 130px;
     }
-
-
-
-
-
 }
 
 @media(max-width:575.8px) {

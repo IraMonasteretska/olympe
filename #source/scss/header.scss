@@ -34,6 +34,29 @@ header.header {
     }
 }
 
+
+.header__nav>ul>li.header-btn {
+    margin-right: 20px;
+}
+.header__nav>ul>li.header-btn a {
+    border-radius: 16px;
+    border: 2px solid #F3F4FB;
+    background: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    padding: 17px 30px;
+    &::before{
+        display: none;
+    }
+}
+.header__nav>ul>li.header-btn a:hover {
+    background: #fff;
+    color: #595e9c;
+}
+
+
+
 .header__nav {
     display: flex;
     align-items: center;
@@ -46,7 +69,7 @@ header.header {
 
         &>li {
             display: inline-block;
-            margin-right: 60px;
+            margin-right: 40px;
 
 
             &.sublink {
@@ -79,14 +102,15 @@ header.header {
 
                 a {
                     border-radius: 16px;
-                    border: 2px solid #FFF;
+                    border: 2px solid #FDC010;
                     font-weight: 600;
                     font-size: 18px;
                     font-family: 'Lexend Deca', sans-serif;
-                    padding: 17px 38px;
+                    padding: 17px 30px;
+                    color: #FDC010;
 
                     &:hover {
-                        background: #fff;
+                        background: #FDC010;
                         color: #595e9c;
                     }
 
@@ -105,58 +129,6 @@ header.header {
                 display: inline-block;
             }
         }
-
-        // .submenu {
-        //     position: absolute;
-        //     top: 100%;
-        //     list-style-type: none;
-        //     padding: 0;
-        //     margin: 0;
-        //     background: #fff;
-        //     width: 200px;
-        //     border-radius: 10px;
-        //     padding: 15px 0;
-        //     transition: 0.5s;
-        //     opacity: 0;
-        //     z-index: -1;
-        //     visibility: hidden;
-        //     transform: translateY(-15px);
-
-        //     &:hover {
-        //         opacity: 1;
-        //         z-index: 1;
-        //         visibility: visible;
-        //         transform: translateY(0);
-        //     }
-
-        //     li {
-
-        //         a {
-        //             text-decoration: none;
-        //             color: #595e9c;
-        //             font-size: 16px;
-        //             font-weight: 500;
-        //             transition: 0.3s;
-        //             display: block;
-        //             padding: 5px 20px;
-
-        //             &:hover {
-        //                 background: rgba(89, 94, 156, 0.1);
-        //             }
-        //         }
-
-        //     }
-        // }
-
-        // .sublink a:hover {
-        //     &+.submenu {
-        //         opacity: 1;
-        //         z-index: 1;
-        //         visibility: visible;
-        //         transform: translateY(0);
-        //     }
-        // }
-
     }
 
 
@@ -450,16 +422,33 @@ header.header .submenuwrap .submenulink .submenulink__text p:not(.title) {
 
 
 
+@media(max-width:1500px) {
+    .header__nav>ul>li {
+        margin-right: 30px;
+    }
+}
 @media(max-width:1399.8px) {
+    .header__logo img {
+        max-width: 140px;
+    }
+    .header__nav>ul>li.header-btn a {
+        font-size: 16px;
+        padding: 14px 20px;
+        border-radius: 10px;
+        border-width: 1px;
+    }
+    .header__nav>ul>li.header-btn {
+        margin-right: 15px;
+    }
     .header__nav>ul>li:last-child a {
         font-size: 16px;
         border-width: 1px;
-        padding: 14px 30px;
+        padding: 14px 20px;
         border-radius: 10px;
     }
 
     .header__nav>ul>li {
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
 }
@@ -492,9 +481,6 @@ header.header .submenuwrap .submenulink .submenulink__text p:not(.title) {
         flex: 0 0 70%;
     }
 
-}
-
-@media(max-width:991.8px) {
 
     header.header {
         .container {
@@ -659,6 +645,20 @@ header.header .submenuwrap .submenulink .submenulink__text p:not(.title) {
     header.header .submenuwrap .submenulink:hover .submenulink__text .title {
         color: #fff;
     }
+    .header__nav>ul>li.header-btn {
+        margin-right: 0px;
+        
+        a{
+            font-size: 20px;
+            border-width: 2px;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+
+
 
    
 

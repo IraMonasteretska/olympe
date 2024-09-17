@@ -1,13 +1,13 @@
 .platformwelcomesect.pricing {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 
     img {
         margin-left: 33px;
-        margin-bottom: 50px;
     }
 
     .imgwrap:after {
         background: linear-gradient(82deg, #1CA99A -1.48%, #5E569B 100%), #1CA99A;
+        top: calc(50% + 25px);
     }
 }
 
@@ -623,6 +623,9 @@
 }
 
 @media (max-width: 1199.8px) {
+    .platformwelcomesect.pricing .imgwrap:after {
+        top: 50%;
+    }
     .pricingsect__head {
         margin: 0px auto 45px;
     }
@@ -656,6 +659,9 @@
 }
 
 @media (max-width: 991.8px) {
+    .platformwelcomesect.pricing .imgwrap:after {
+        top: calc(50% + 25px);
+    }
     .pricingsect.whitesect {
         padding: 60px 0 50px;
     }
@@ -773,6 +779,9 @@
 }
 
 @media (max-width: 575.8px) {
+    .platformwelcomesect.pricing .imgwrap:after {
+        top: 50%;
+    }
     .pricingsect {
         padding: 70px 0 25px;
     }
